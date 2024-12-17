@@ -1,8 +1,22 @@
 {
   "name": "products-challenge-backend",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "dev": "nodemon src/index.ts"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
 }
