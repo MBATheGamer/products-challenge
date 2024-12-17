@@ -1,8 +1,3 @@
-export type Query = {
-  name: string;
-  value: string;
-};
-
 type Dimensions = {
   width: number;
   height: number;

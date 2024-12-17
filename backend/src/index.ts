@@ -1,10 +1,15 @@
-require("dotenv").config();
-
+import cors from "cors";
 import experss from "express";
 import { routes } from "./routes";
 
 const app = experss();
-const port = parseInt(process.env.PORT as string) || 8000;
+const port = 8000;
+
+app.use(
+  cors({
+    origin: ["http://localhost:5173"],
+  }),
+);
 
 routes(app);
 

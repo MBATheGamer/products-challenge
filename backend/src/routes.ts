@@ -6,4 +6,4 @@ export const routes = (router: Router) => {
   router.get("/api/products/:id", products.getById);
   router.get("/api/products/categories/:category", products.getByCategory);
   router.get("/api/products/search", products.search);
-}
+};

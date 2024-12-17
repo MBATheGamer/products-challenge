@@ -10,5 +10,10 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@tanstack/react-query": "^5.62.7",
+    "@tanstack/router-devtools": "^1.91.2",
+    "@tanstack/router-plugin": "^1.91.1"
+  }
 }

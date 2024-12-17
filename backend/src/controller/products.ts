@@ -36,7 +36,7 @@ export const getByCategory = async (request: Request, response: Response) => {
   ];
 
   response.send(
-    await get(`https://dummyjson.com/products/category/${category}`, queries)
+    await get(`https://dummyjson.com/products/category/${category}`, queries),
   );
 };
 
@@ -44,7 +44,7 @@ export const getById = async (request: Request, response: Response) => {
   const id = parseInt(request.params["id"]);
 
   let product = await fetch(
-    `https://dummyjson.com/products/${id}`
+    `https://dummyjson.com/products/${id}`,
   ).then<Product>(response => response.json());
 
   response.send(product);
