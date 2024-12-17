@@ -1,13 +1,12 @@
 require("dotenv").config();
 
-import experss, { Request, Response } from "express";
+import experss from "express";
+import { routes } from "./routes";
 
 const app = experss();
 const port = parseInt(process.env.PORT as string) || 8000;
 
-app.get("/", (_request: Request, response: Response) => {
-  response.send("Hello, World!\n");
-});
+routes(app);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);

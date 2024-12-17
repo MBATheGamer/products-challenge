@@ -1,3 +1,9 @@
+export type Query = {
+  name: string;
+  value: string;
+};
+
+
 type Dimensions = {
   width: number;
   height: number;
@@ -19,7 +25,7 @@ type Review = {
   reviewerEmail: string;
 }
 
-type Product = {
+export type Product = {
   id: number;
   title: string;
   description: string;
